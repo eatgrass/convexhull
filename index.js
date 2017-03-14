@@ -1,3 +1,4 @@
+const _ = require('lodash')
 
 module.exports = (options) =>{
     options = options || {};
@@ -29,8 +30,7 @@ module.exports = (options) =>{
         }
 
         if(sort) {
-            points.sort(sortByX);
-            points.sort(sortByY);
+            points = _.orderBy(points, ['longitude', 'latitude'], ['desc', 'desc']);
         }
 
         let bot = 0;

@@ -1,19 +1,25 @@
 {
   "name": "convexhull",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "convex hull 2D Andrew's monotone algorithm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "keywords": [
     "convex-hull",
     "algorithm"
   ],
   "repository": {
-      "type": "git",
-      "url": "git@github.com:eatgrass/convexhull.git"
+    "type": "git",
+    "url": "git@github.com:eatgrass/convexhull.git"
   },
   "author": "eatgrass",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.18.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
 }
