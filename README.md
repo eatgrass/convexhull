@@ -1,4 +1,6 @@
 # convexhull
+[![npm version](https://badge.fury.io/js/convexhull.svg)](https://badge.fury.io/js/convexhull)
+
 convex hull 2D algorithm using monotone chain algorithm
 
 # usage
