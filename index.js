@@ -1,4 +1,23 @@
-module.exports = (points) => {
+const isLeft = (p0, p1 , p2) => {
+    return (p1.longitude - p0.longitude) * (p2.latitude - p0.latitude) - (p2.longitude - p0.longitude) * (p1.latitude - p0.latitude);
+}
+
+const sortByLng = (a, b) => {
+    return a.longitude - b.longitude;
+}
+
+const sortByLat = (a, b) => {
+    return a.latitude - b.latitude;
+}
+
+module.exports = (points, sort) => {
+
+    points = points || [];
+
+    if(sort) {
+        points.sort(sortByLng);
+        points.sort(sortByLat);
+    }
 
     let bot = 0;
     let top = -1;
@@ -88,13 +107,3 @@ module.exports = (points) => {
     return hull;
 }
 
-const isLeft = (p0, p1 , p2) => {
-    return (p1.longitude - p0.longitude) * (p2.latitude - p0.latitude) - (p2.longitude - p0.longitude) * (p1.latitude - p0.latitude);
-}
-
-function sortPointX(a, b) {
-    return a.longitude - b.longitude;
-}
-function sortPointY(a, b) {
-    return a.latitude - b.latitude;
-}
