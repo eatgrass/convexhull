@@ -1,5 +1,6 @@
 # convexhull
 [![npm version](https://badge.fury.io/js/convexhull.svg)](https://badge.fury.io/js/convexhull)
+[![Build Status](https://travis-ci.org/eatgrass/convexhull.svg?branch=master)](https://travis-ci.org/eatgrass/convexhull)
 
 convex hull 2D algorithm using monotone chain algorithm
 
