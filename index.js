@@ -19,7 +19,14 @@ module.exports = (options) =>{
 
 
     return (points, sort) => {
-        points = points || [];
+
+        if(!(points instanceof Array)) {
+            throw new TypeError('points must be an array');
+        }
+
+        if(points.length < 2) {
+            return [];
+        }
 
         if(sort) {
             points.sort(sortByX);
