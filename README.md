@@ -17,13 +17,17 @@ const points = [
   ...
 ];
 
-const hull = convexhull(points);
+let hull = convexhull(points);
+
+// for unsorted points
+hull = convexhull(points, true);
+
 ```
 
 ## Options
 
 | option        | desc           | default     |
-| ------------- |:--------------:| -----------:|
+| ------------- |:--------------:| ------------|
 | x             | property key x | 'longitude' |
 | y             | property key y | 'latitude'  |
 
