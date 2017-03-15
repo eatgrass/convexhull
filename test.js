@@ -1,5 +1,6 @@
 import test from 'ava';
 import convexhull from './index';
+import _ from 'lodash';
 
 test('convex hull ordered points', t => {
     const points = [{
@@ -388,5 +389,5 @@ test('convex hull disordered points', t => {
         "longitude": 121.401917
     }];
 
-    t.deepEqual(convexhull()(points,true).length, hull.length);
+    t.deepEqual(convexhull()(points,true), hull);
 });
