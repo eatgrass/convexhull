@@ -7,7 +7,7 @@ convex hull 2D algorithm using monotone chain algorithm
 ## usage
 
 ```javascript
-const convexhull = require('convexhull')(/*options*/{x:'lng', y: 'lat'});
+const convexhull = require('convexhull')(/*options*/{x: 'lng', y: 'lat'});
 
 const points = [
   {
