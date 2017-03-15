@@ -1,0 +1,113 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@4.1.2
+3 info using node@v7.6.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/Jonathan/codelab/ch',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/Jonathan/.npm/convexhull/1.0.5/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/Jonathan/.npm correctMkdir not in flight; initializing
+10 info lifecycle convexhull@1.0.5~prepublish: convexhull@1.0.5
+11 silly lifecycle convexhull@1.0.5~prepublish: no script for prepublish, continuing
+12 info lifecycle convexhull@1.0.5~prepare: convexhull@1.0.5
+13 silly lifecycle convexhull@1.0.5~prepare: no script for prepare, continuing
+14 verbose tar pack [ '/Users/Jonathan/.npm/convexhull/1.0.5/package.tgz',
+14 verbose tar pack   '/Users/Jonathan/codelab/ch' ]
+15 verbose tarball /Users/Jonathan/.npm/convexhull/1.0.5/package.tgz
+16 verbose folder /Users/Jonathan/codelab/ch
+17 verbose addLocalTarball adding from inside cache /Users/Jonathan/.npm/convexhull/1.0.5/package.tgz
+18 verbose correctMkdir /Users/Jonathan/.npm correctMkdir not in flight; initializing
+19 silly cache afterAdd convexhull@1.0.5
+20 verbose afterAdd /Users/Jonathan/.npm/convexhull/1.0.5/package/package.json not in flight; writing
+21 verbose correctMkdir /Users/Jonathan/.npm correctMkdir not in flight; initializing
+22 verbose afterAdd /Users/Jonathan/.npm/convexhull/1.0.5/package/package.json written
+23 silly publish { name: 'convexhull',
+23 silly publish   version: '1.0.5',
+23 silly publish   description: 'convex hull 2D Andrew\'s monotone algorithm',
+23 silly publish   main: 'index.js',
+23 silly publish   scripts: { test: 'ava' },
+23 silly publish   keywords: [ 'convex-hull', 'algorithm' ],
+23 silly publish   repository:
+23 silly publish    { type: 'git',
+23 silly publish      url: 'git+ssh://git@github.com/eatgrass/convexhull.git' },
+23 silly publish   author: { name: 'eatgrass' },
+23 silly publish   license: 'MIT',
+23 silly publish   devDependencies: { ava: '^0.18.2' },
+23 silly publish   dependencies: { lodash: '^4.17.4' },
+23 silly publish   readme: '# convexhull\n[![npm version](https://badge.fury.io/js/convexhull.svg)](https://badge.fury.io/js/convexhull)\n[![Build Status](https://travis-ci.org/eatgrass/convexhull.svg?branch=master)](https://travis-ci.org/eatgrass/convexhull)\n\nconvex hull 2D algorithm using monotone chain algorithm\n\n## usage\n\n```javascript\nconst convexhull = require(\'convexhull\')(/*options*/{x: \'lng\', y: \'lat\'});\n\nconst points = [\n  {\n    lng: 121.409058,\n    lat: 31.191149\n  },\n  ...\n];\n\nlet hull = convexhull(points);\n\n// for unsorted points\nhull = convexhull(points, true);\n\n```\n\n## Options\n\n| option        | desc           | default     |\n| ------------- |:--------------:| ------------|\n| x             | property key x | \'longitude\' |\n| y             | property key y | \'latitude\'  |\n\n## Reference\n[MonotoneChain](http://geomalgorithms.com/a10-_hull-1.html#Monotone%20Chain)\n',
+23 silly publish   readmeFilename: 'README.md',
+23 silly publish   gitHead: 'b209cd4486a3a75897361c9755e7f5ad5dcca0f5',
+23 silly publish   bugs: { url: 'https://github.com/eatgrass/convexhull/issues' },
+23 silly publish   homepage: 'https://github.com/eatgrass/convexhull#readme',
+23 silly publish   _id: 'convexhull@1.0.5',
+23 silly publish   _shasum: 'd700b20d4de71d0cc5d3f16ad18d21281c676894',
+23 silly publish   _from: '.' }
+24 info lifecycle convexhull@1.0.5~prepublishOnly: convexhull@1.0.5
+25 silly lifecycle convexhull@1.0.5~prepublishOnly: no script for prepublishOnly, continuing
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name convexhull
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'convexhull',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   escapedName: 'convexhull',
+30 silly mapToRegistry   name: 'convexhull',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/convexhull
+32 verbose publish registryBase https://registry.npmjs.org/
+33 silly publish uploading /Users/Jonathan/.npm/convexhull/1.0.5/package.tgz
+34 verbose request uri https://registry.npmjs.org/convexhull
+35 verbose request sending authorization for write operation
+36 info attempt registry request try #1 at 09:24:05
+37 verbose request using bearer token for auth
+38 verbose request id 92aeb7f99688dd12
+39 http request PUT https://registry.npmjs.org/convexhull
+40 http 403 https://registry.npmjs.org/convexhull
+41 verbose headers { 'content-type': 'application/json',
+41 verbose headers   'cache-control': 'max-age=300',
+41 verbose headers   'content-length': '95',
+41 verbose headers   'accept-ranges': 'bytes',
+41 verbose headers   date: 'Wed, 15 Mar 2017 01:24:04 GMT',
+41 verbose headers   via: '1.1 varnish',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'x-served-by': 'cache-nrt6122-NRT',
+41 verbose headers   'x-cache': 'MISS',
+41 verbose headers   'x-cache-hits': '0',
+41 verbose headers   'x-timer': 'S1489541043.380600,VS0,VE639',
+41 verbose headers   vary: 'Accept-Encoding' }
+42 verbose request invalidating /Users/Jonathan/.npm/registry.npmjs.org/convexhull on PUT
+43 error publish Failed PUT 403
+44 verbose stack Error: "You cannot publish over the previously published version 1.0.5." : convexhull
+44 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:304:12)
+44 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:292:14)
+44 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:212:14)
+44 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:186:22)
+44 verbose stack     at emitTwo (events.js:106:13)
+44 verbose stack     at Request.emit (events.js:192:7)
+44 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1081:10)
+44 verbose stack     at emitOne (events.js:96:13)
+44 verbose stack     at Request.emit (events.js:189:7)
+44 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1001:12)
+45 verbose statusCode 403
+46 verbose pkgid convexhull
+47 verbose cwd /Users/Jonathan/codelab/ch
+48 error Darwin 16.4.0
+49 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+50 error node v7.6.0
+51 error npm  v4.1.2
+52 error code E403
+53 error "You cannot publish over the previously published version 1.0.5." : convexhull
+54 error If you need help, you may report this error at:
+54 error     <https://github.com/npm/npm/issues>
+55 verbose exit [ 1, true ]
