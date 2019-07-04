@@ -30,7 +30,7 @@ module.exports = (options) =>{
         }
 
         if(sort) {
-            points = _.orderBy(points, ['longitude', 'latitude'], ['asc', 'asc']);
+            points = _.orderBy(points, [x, y], ['asc', 'asc']);
         }
 
         let bot = 0;
